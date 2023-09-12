@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Pets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="CadastroLogin/carregacadastro.js"></script>
+    <script src="CadastroLogin/atualizardados.js"></script>
+    <script src="CadastroLogin/sair.js"></script>
+    <script src="CadastroLogin/verificalogin.js"></script>
+    <script src="CadastroLogin/cadastrodepets.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="inicio.html"><img src="Imagens/logo.png" alt="Logo do Site" id="inicio"></a>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="carrinho.html"><img src="Imagens/carrinho.png" alt="Carrinho"></a>
+            <a href="minhaconta.html"><img src="Imagens/minhaconta.png" alt="Minha Conta"></a>
+            
+        </nav>
+        <input type="text" placeholder="O que seu pet precisa?" class="search-bar">
+    </header>
+
+    <div class="main-content">
+        <!-- Seção esquerda com imagens -->
+        <div class="image-section left">
+            <img src="Imagens/gato1.png" alt="Imagem 1 da esquerda">
+            <img src="Imagens/gato2.png" alt="Imagem 2 da esquerda">
+            <img src="Imagens/nuvem.png" alt="Imagem 3 da esquerda">
+        </div>
+
+
+        <!-- Seção central -->
+        <div class="centroMeusDadoss">
+            <a class="registration-btn">Meus Dados</a>
+            <div class="btn-list-dados"> <!-- Aqui foi atualizado o nome da classe -->
+
+                <a href="meusdados.html" class="btn">
+                    <img src="Imagens/dadospessoais.png" alt="Meus Pets">
+                    <span>Meus Dados</span>
+                </a>
+
+                <a href="meuspets.html" class="btn">
+                    <img src="Imagens/meuspets.png" alt="Ícone Meus Pets">
+                    <span>Meus Pets</span>
+                </a>
+
+                <a href="pedidos.html" class="btn">
+                    <img src="Imagens/pedidos.png" alt="Ícone Pedidos">
+                    <span>Pedidos</span>
+                </a>
+
+                <div class="btn" id="logoutBtn" onclick="logoutUser()">
+                    <img src="Imagens/sair.png" alt="Ícone Sair">
+                    <span>Sair</span>
+            </div>
+
+                <div class="pet-registration-container">
+                    <form id="petRegistrationForm">
+                        <h2>Cadastrar Pet</h2>
+
+                        <div class="form-group">
+                            <label for="petName">Nome:</label>
+                            <input type="text" id="petName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="petType">Tipo:</label>
+                            <input type="text" id="petType" placeholder="Ex: Cachorro, Gato..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="petBreed">Raça:</label>
+                            <input type="text" id="petBreed" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="petTemperament">Temperamento:</label>
+                            <input type="text" id="petTemperament" placeholder="Ex: Brincalhão, Calmo..." required>
+                        </div>
+
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Seção direita com imagens (Corrigido: Esta seção foi movida para dentro do .main-content) -->
+        <div class="image-section right">
+            <img src="Imagens/dog1.png" alt="Imagem 1 da direita">
+            <img src="Imagens/dog2.png" alt="Imagem 2 da direita">
+            <img src="Imagens/nuvem.png" alt="Imagem 3 da direita">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Criado por: Felipe Benedetti</p>
+            <p>Contato: <a href="mailto:felipe-benedetti@hotmail.com">felipe-benedetti@hotmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

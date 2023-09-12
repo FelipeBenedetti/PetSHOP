@@ -1,0 +1,830 @@
+        /* Estilos básicos para o cabeçalho */
+        footer {
+            flex-shrink: 0;
+            background-color: #E5E5E5; /* Cinza claro */
+            padding: 20px 0; /* Espaçamento vertical */
+            text-align: center; /* Centraliza o conteúdo */
+            font-family: 'Poppins', sans-serif; /* Define a fonte */
+        }
+        
+        .footer-content p {
+            margin: 5px 0; /* Espaçamento entre os parágrafos */
+        }
+        
+        .footer-content a {
+            color: inherit; /* Faz o link herdar a cor do texto */
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+        
+        .footer-content a:hover {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
+        }
+
+        header {
+            background-color: #FDF5D8;
+            color: black;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            font-family: 'Poppins', sans-serif;
+            padding: 0;
+            /* isso remove qualquer preenchimento */
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav img {
+            margin: 0 60px;
+            /* Reduzi ainda mais a margem lateral */
+            max-width: 500px;
+            height: auto;
+            /* mantém a proporção da imagem */
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            /* Reduzi ainda mais a margem lateral */
+        }
+
+        /* Para Telas Menores */
+        
+
+
+
+        body {
+            background-color: #F6DAE2;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        body,
+        .container {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a,
+        nav a:link,
+        nav a:visited {
+            color: black;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            /* Remova o sublinhado */
+            background-color: #F6DAE2;
+            /* Fundo preto */
+            color: white;
+            /* Fonte branca */
+            padding: 5px 10px;
+            /* Adiciona preenchimento */
+            border-radius: 15px;
+            /* Arredonda o fundo*/
+            margin: 0 40px 0 40px;
+            /* Remove o mesmo valor do preenchimento das margens */
+        }
+
+
+        .search-bar {
+            margin-top: 10px;
+            display: block;
+            width: 15%;
+            /* Reduzi o tamanho da barra de pesquisa */
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            /* Adicionado para arredondar os cantos */
+            border: none;
+            /* Remover a borda padrão do input */
+            outline: none;
+            /* Remover o contorno azul que aparece ao focar */
+        }
+
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            /* Isso irá garantir que as seções sejam empurradas para as bordas */
+            align-items: start;
+            /* Para garantir que todas as seções comecem no topo, independentemente do seu conteúdo */
+            padding: 20px;
+            /* Adicione um pouco de preenchimento para evitar que o conteúdo toque nas bordas da janela */
+            gap: 20px;
+            /* Espaçamento entre as seções */
+        }
+
+
+
+
+
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            gap: 200px;
+            /* Espaçamento entre as imagens */
+        }
+
+        .center-section {
+            flex-grow: 1;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #F6DAE2;
+            margin: 0 50px;
+            display: flex;
+            flex-direction: column;
+            /* Organiza os elementos em uma coluna */
+            align-items: center;
+            /* Alinha os elementos horizontalmente ao centro */
+            justify-content: center;
+            /* Alinha os elementos verticalmente ao centro */
+        }
+
+
+        .center-text {
+            font-family: 'Balsamiq Sans', sans-serif;
+            font-size: 40px;
+            /* Aumente o tamanho da fonte conforme desejado */
+            color: #ED95BA;
+            text-shadow: -2px -2px 0 #fff,
+                2px -2px 0 #fff,
+                -2px 2px 0 #fff,
+                2px 2px 0 #fff,
+                -4px 0px 0 #fff,
+                4px 0px 0 #fff,
+                0px 4px 0 #fff,
+                0px -4px 0 #fff;
+            margin: 5px 0;
+            /* Espaçamento entre cada linha do texto */
+            padding: 5px 0;
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+        }
+
+        .sub-text {
+            font-family: 'Balsamiq Sans', sans-serif;
+            font-size: 22px;
+            /* Defina o tamanho da fonte desejado */
+            color: #ED95BA;
+            /* Usei a mesma cor do texto anterior, mas você pode ajustá-la */
+            margin-top: 20px;
+            /* Espaçamento entre o texto anterior e este */
+            text-align: center;
+            /* Centraliza o texto horizontalmente */
+        }
+
+        /* Estilizar as imagens para terem um tamanho específico, se necessário */
+        .image-section img {
+            max-width: 160px;
+            /* Por exemplo, ajuste conforme necessário */
+            height: auto;
+        }
+
+        .contact-btn {
+            background-color: black;
+            /* Fundo preto */
+            color: white;
+            /* Fonte branca */
+            padding: 10px 20px;
+            /* Espaçamento interno do botão        <div class="centroCadastro">
+            <a href="contato.html" class="contact-btn">Contato</a> <!-- Este é o novo botão de contato --> */
+            text-decoration: none;
+            /* Remove o sublinhado padrão dos links */
+            font-family: 'Poppins', sans-serif;
+            /* Fonte Poppins */
+            border: none;
+            /* Remove a borda padrão */
+            border-radius: 8px;
+            /* Arredonda os cantos do botão */
+            cursor: pointer;
+            /* Altera o cursor para indicar um item clicável */
+            transition: 0.3s;
+            /* Suavidade na transição de cor ao passar o mouse */
+        }
+
+        .contact-btn:hover {
+            background-color: #333;
+            /* Escurece um pouco o fundo ao passar o mouse */
+        }
+
+
+        /* Estilo para centralizar o conteúdo da div .centroCadastro */
+        .centroCadastro {
+            display: flex;
+            flex-direction: column;
+            /* Para garantir que os elementos filhos estejam alinhados verticalmente */
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            /* Ocupa todo o espaço vertical disponível */
+        }
+
+        /* Novos estilos para o formulário de cadastro */
+        #registrationForm {
+            background-color: #F6DAE2;
+            border-radius: 5px;
+            padding: 20px;
+            /* Aumentei o padding para dar um pouco mais de espaço */
+            margin-top: 20px;
+            width: 80%;
+            /* Defini um tamanho para o formulário */
+            max-width: 900px;
+            /* Limita o tamanho máximo para não ficar muito largo em telas grandes */
+        }
+
+        #registrationForm .columns {
+            display: flex;
+            gap: 10px;
+            /* Reduzi o gap para deixar as colunas mais próximas */
+        }
+
+        #registrationForm .column {
+            flex: 1;
+        }
+
+        #registrationForm input[type="text"],
+        #registrationForm input[type="email"],
+        #registrationForm input[type="tel"],
+        #registrationForm input[type="password"] {
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 50px;
+            padding: 10px;
+            width: 90%;
+            /* Aumentei para 100% para preencher toda a largura da coluna */
+            margin-bottom: 20px;
+            /* Reduzi a margem para os campos ficarem mais próximos */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #registrationForm input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 150px;
+            /* Ajustei o padding para ser mais proporcional */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #registrationForm input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .login-prompt {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: -550px;
+        }
+
+        .registroAtalho {
+            text-align: center;
+            margin-top: 20px;
+            /*  margin-left: -150px;*/
+        }
+
+
+        .registration-btn {
+            background-color: #FFA5DE;
+            color: #fff;
+            padding: 10px 20px;
+            /* ajuste conforme necessário */
+            border-radius: 50px;
+            /* para fazer o botão bem arredondado */
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            /* para remover o sublinhado padrão dos links */
+            transition: 0.3s;
+            /* efeito de transição suave ao passar o mouse */
+            display: inline-block;
+            /* garante um melhor controle do bloco ao aplicar padding e outras propriedades */
+        }
+
+        .registration-btn:hover {
+            background-color: #EE94CE;
+            /* uma variação de cor para quando o mouse passa por cima */
+        }
+
+
+        #loginForm {
+            background-color: #F6DAE2;
+            border-radius: 5px;
+            padding: 50px;
+            margin-top: 20px;
+            width: 70%;
+        }
+
+        #loginForm label {
+            font-family: 'Poppins', sans-serif;
+            margin-right: 10px;
+        }
+
+        #loginForm input[type="email"],
+        #loginForm input[type="password"] {
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 50px;
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #loginForm input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 200px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #loginForm input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+
+        /* Estilos da pagina Minha Conta*/
+
+
+        .btn-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* Espaçamento entre os botões */
+            margin: 80px auto 0;
+            /* Adicionado 50px de margem superior */
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            /* Espaço entre as linhas de botões; ajuste conforme necessário */
+
+            padding: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            width: calc(50% - 10px);
+            /* 50% da largura do container com a subtração do espaço entre botões */
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+            /* Efeito de transição */
+        }
+
+        .btn:hover {
+            background-color: #333;
+            /* Cor mais clara ao passar o mouse */
+        }
+
+        .btn img {
+            width: 50px;
+            /* Tamanho da imagem */
+            margin-bottom: 10px;
+            /* Espaço entre a imagem e o texto */
+        }
+
+        .btn span {
+            display: block;
+        }
+
+
+
+        /*Estilos para Meus Dados*/
+
+        /*Estilos para Meus Dados*/
+
+        .centroMeusDadoss {
+            width: 100%;
+            /* Ajuste para ocupar toda a largura */
+            text-align: left;
+            /* Alinha conteúdo à esquerda */
+            padding: 0 20px;
+            /* Espaçamento nas laterais para não colar no canto da tela */
+        }
+
+        .btn-list-dados {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            /* Espaço entre os botões */
+            margin-top: 150px;
+            /* Margem no topo para distanciar dos outros elementos */
+        }
+
+        .btn-list-dados .btn {
+            background-color: #000;
+            /* Cor de fundo preta */
+            color: #FFF;
+            /* Cor da fonte branca */
+            padding: 10px 40px;
+            /* Reduzi o padding vertical e aumentei o horizontal para deixar mais fino e comprido */
+            border-radius: 10px;
+            /* Bordas arredondadas */
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            /* Remove o sublinhado dos links */
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            width: 250px;
+            /* Define uma largura fixa para os botões */
+        }
+
+        .btn-list-dados .btn img {
+            width: 30px;
+            /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+        }
+
+        .btn-list-dados .btn:hover {
+            background-color: #333;
+            /* Cor de fundo mais clara no hover */
+        }
+
+        .dados-page {
+            position: relative;
+            left: 30px;
+            /* Ajuste esse valor para mover horizontalmente */
+            margin-top: 50px;
+            /* Ajuste esse valor para mover verticalmente */
+        }
+
+
+        /*Meus dados seção*/
+
+        /* Estilo para a seção de dados do usuário */
+        .user-data-section {
+            width: 60%;
+            /* Ajuste conforme necessário */
+            margin: 20px 20px;
+            margin-left: -10%;
+            margin-right: 30%;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-right: 40px;
+        }
+
+        .user-data-section label {
+            font-weight: 500;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .user-data-section input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #444;
+        }
+
+
+
+
+        /* Meus Pets */
+
+
+
+        .pet-registration-container {
+            position: absolute;
+            top: 50%;
+            /* Centralizar verticalmente */
+            left: 50%;
+            /* Centralizar horizontalmente */
+            transform: translate(-50%, -50%);
+            /* Isso move o elemento pela metade de sua largura e altura, efetivamente centralizando-o */
+        }
+
+
+        #petRegistrationForm {
+            width: 300px;
+            /* Ajuste conforme necessário */
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #F6DAE2;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        #petRegistrationForm button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        #petRegistrationForm button:hover {
+            background-color: #333;
+        }
+
+
+        .centroServicos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Espaço entre os botões e o botão de contato */
+       }
+        
+
+        /* Página de Serviços*/
+        .servicos-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espaço entre os blocos de serviço */
+            margin: 20px 0; /* Margem superior e inferior para espaço ao redor dos blocos */
+        }
+        
+        .servico-item {
+            width: 200px; /* Largura fixa para cada bloco. Ajuste conforme necessário. */
+            text-align: center;
+            background-color: #ffffff; /* Fundo branco */
+            border-radius: 15px; /* Cantos arredondados */
+            padding: 20px 10px; /* Espaçamento interno para tornar o bloco mais comprido */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar um efeito "elevado" */
+            transition: transform 0.3s ease; /* Efeito de transição para o hover */
+            margin-top: -750px;
+            margin-bottom: 500px;
+        }
+        
+        .servico-item a {
+            text-decoration: none;
+            color: inherit; /* Para que o texto herde a cor padrão e não tenha o azul dos links */
+        }
+        
+        .servico-item img {
+            width: 100%;
+            height: auto;
+            display: block; /* Isso remove o espaço em branco abaixo da imagem */
+        }
+        
+        .servicos-btn {
+            display: block;
+            margin: 20px auto; /* Margem superior e inferior para espaçamento e auto para centralizar */
+            padding: 10px 20px; /* Espaçamento interno para o botão */
+            font-size: 18px; /* Tamanho da fonte */
+            background-color: #FFA5DE; /* Cor de fundo - altere conforme sua preferência */
+            color: #ffffff; /* Cor do texto */
+            border: none; /* Remove a borda padrão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            transition: background-color 0.3s ease; /* Efeito de transição para hover */
+        }
+        
+        .servicos-btn:hover {
+            background-color: #0056b3; /* Cor de fundo um pouco mais escura para o hover */
+        }
+
+
+        /* páginas de banho e tosa*/
+
+        .content-wrapper {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            display: flex;
+            justify-content: space-between;
+            padding: 100px;
+            max-width: 1600px;
+            margin: 50px auto 0 auto;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            flex: 1 0 auto;
+            margin-bottom: 20px;
+            
+        }
+        
+        .left-section {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            flex: 1;
+            padding-right: 20px;
+        }
+        
+        .tosa-image {
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        .right-section {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            flex: 2;
+            padding-left: 20px;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .actions {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .action-block {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            flex: 1;
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: #ED95BA;
+        }
+        
+        .action-block button {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            margin-top: 20px;
+            padding: 15px 50px;
+            cursor: pointer;
+            border: none;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+        }
+        
+        .action-block p {
+            font-family: 'Poppins', sans-serif; /* Adicionada fonte Poppins */
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        .action-block button img {
+            width: 15px;
+            margin-right: 5px;
+        }
+        
+        .tosa-button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;  /* margem para separá-lo do cabeçalho */
+            margin-bottom: 20px;  /* margem para separá-lo do content-wrapper */
+        }
+        
+        .tosa-indicator-button {
+            padding: 10px 20px;
+            background-color: #ED95BA;
+            color: white;
+            border: none;
+            border-radius: 13px;
+            font-family: 'Poppins', sans-serif;  /* Fonte Poppins */
+            font-size: 18px;
+            cursor: pointer;
+        }
+        
+        .tosa-indicator-button:hover {
+            background-color: #d881a9;  /* Uma cor um pouco mais escura para o hover */
+        }
+        
+        
+        .agendamento-section1 {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            padding: 20px 40px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        
+        .agendamento-section1 h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .agendamento-section1 form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .agendamento-section1 label,
+        .agendamento-section1 input,
+        .agendamento-section1 select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        
+        .agendamento-section1 input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .agendamento-section1 input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        .ui-datepicker {
+            font-size: 16px;
+        }
+
+
+        /* Estilos da página de agendamentos*/
+
+        .service-container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: row;
+            gap: 2rem;
+            margin: 4rem auto; /* Aumentando a margem superior e inferior */
+            max-width: 1200px;
+            padding: 0 2rem; /* Adicionando um padding lateral para afastar os itens das bordas */
+        }
+        
+        .image-section1.left1 {
+            order: 1; /* Assegura que essa seção de imagens fique à esquerda */
+        }
+        
+        .image-section1.right1 {
+            order: 3; /* Assegura que essa seção de imagens fique à direita */
+        }
+        
+        .center-section1 {
+            order: 2; /* Assegura que essa seção fique no centro */
+            flex: 2;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .image-section1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center; /* Centralizando as imagens verticalmente */
+        }
+        
+        .image-section1 img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+        }

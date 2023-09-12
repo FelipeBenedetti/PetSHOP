@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="inicio.html"><img src="Imagens/logo.png" alt="Logo do Site" id="inicio"></a>
+            <a href="inicio.html">Início</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="carrinho.html"><img src="Imagens/carrinho.png" alt="Carrinho"></a>
+            <a href="minhaconta.html"><img src="Imagens/minhaconta.png" alt="Minha Conta"></a>
+        </nav>
+        <input type="text" placeholder="O que seu pet precisa?" class="search-bar">
+    </header>
+
+    <div class="main-content">
+        <!-- Seção esquerda com imagens -->
+        <div class="image-section left">
+            <img src="Imagens/gato1.png" alt="Imagem 1 da esquerda">
+            <img src="Imagens/gato2.png" alt="Imagem 2 da esquerda">
+            <img src="Imagens/nuvem.png" alt="Imagem 3 da esquerda">
+        </div>
+
+        <!-- Seção central -->
+        <div class="centroCadastro">
+            <a class="registration-btn">Página De Cadastro</a>
+
+            <!-- Formulário de cadastro -->
+
+            <form id="registrationForm" onsubmit="return register(event)">
+                <div class="columns">
+                    <div class="column">
+                        <input type="text" id="fullName" placeholder="Nome completo" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phoneNumber" placeholder="Número de Celular" required>
+                        <input type="text" id="address" placeholder="Endereço" required>
+                        <input type="text" id="cep" placeholder="CEP" required>
+                    </div>
+                    <div class="column">
+                        <input type="text" id="city" placeholder="Cidade" required>
+                        <input type="text" id="state" placeholder="Estado" required>
+                        <input type="text" id="country" placeholder="País" required>
+                        <input type="password" id="password" placeholder="Senha" required>
+                        <input type="password" id="repeatPassword" placeholder="Repita sua senha" required>
+                    </div>
+                </div>
+                <input type="submit" value="Registrar">
+                <p class="login-prompt">
+                    Já possui conta? <a href="login.html" style="text-decoration: underline;">Login</a>.
+                </p>               
+            </form>
+        </div>
+
+        <!-- Seção direita com imagens (Corrigido: Esta seção foi movida para dentro do .main-content) -->
+        <div class="image-section right">
+            <img src="Imagens/dog1.png" alt="Imagem 1 da direita">
+            <img src="Imagens/dog2.png" alt="Imagem 2 da direita">
+            <img src="Imagens/nuvem.png" alt="Imagem 3 da direita">
+        </div>
+    </div>
+    <script src="CadastroLogin/cadastro.js"></script>
+    <footer>
+        <div class="footer-content">
+            <p>Criado por: Felipe Benedetti</p>
+            <p>Contato: <a href="mailto:felipe-benedetti@hotmail.com">felipe-benedetti@hotmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
